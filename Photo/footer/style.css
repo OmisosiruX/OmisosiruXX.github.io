@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  background-color: black;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+.world {
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+.title {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) translateZ(-1000px);
+  text-align: center;
+}
+.title img {
+  width: 100%;
+}
+.title div {
+  font-size: 2vw;
+  font-weight: bold;
+  background-color: pink;
+}
+.board {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  top: 50%;
+  font-size: 5vw;
+  color: white;
+}
+.board:nth-child(odd) {
+  left: 0;
+}
+.board:nth-child(even) {
+  right: 0;
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>俺の本棚</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキス">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="Photo/book.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="site-title">
+        <a href="index.html"><img src="Photo/ore.png" alt="俺の本棚"></a>
+      </h1>
+
+      <nav id="navi">
+        <ul class="nav-menu">
+          <li><a href="#pickup">PICK UP</a></li>
+          <li><a href="#feature">BOOKS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <ul class="nav-sns">
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Ansatsu/index.html" target="_blank">暗殺教室</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Enen/index.html" target="_blank">炎炎ノ消防隊</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Gotobun/index.html" target="_blank">五等分の花嫁</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Grandblue/index.html" target="_blank">ぐらんぶる</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Hero/index.html" target="_blank">僕のヒーローアカデミア</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Jyurietto/index.html" target="_blank">寄宿学校のジュリエット</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Kakkou/index.html" target="_blank">カッコウの許嫁</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Kimetsu/index.html" target="_blank">鬼滅の刃</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Kuroneko/index.html" target="_blank">黒猫と魔女の教室</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Magi/index.html" target="_blank">マギ</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Mokushiroku/index.html" target="_blank">黙示録の四騎士</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Noragami/index.html" target="_blank">ノラガミ</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Onepunch/index.html" target="_blank">ワンパンマン</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Sentai/index.html" target="_blank">戦隊大失格</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Shirokuro/index.html" target="_blank">白聖女と黒牧師</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Taizai/index.html" target="_blank">七つの大罪</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Tensura/index.html" target="_blank">転生したらスライムだった件</a></li>
+          <li><a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Nogenora/index.html" target="_blank">ノーゲーム・ノーライフ</a></li>
+        </ul>
+      </nav>
+
+      <div class="toggle_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div id="mask"></div>
+    </header>
+
+    <main id="main">
+      <div id="video">
+        <video id="bg-video" src="Photo/sougen.mp4" loop autoplay muted playsinline></video>
+      </div>
+
+      <section id="pickup">
+        <h2 class="sec-title">PICK UP</h2>
+        <ul class="slick-area">
+          <li><img src="Photo/Ansatsu/img/ansatsu001.jpg" alt="ピックアップ1 暗殺教室"></li>
+          <li><img src="Photo/Enen/img/enen001.jpg" alt="ピックアップ2 炎炎の消防隊"></li>
+          <li><img src="Photo/Gotobun/img/gotobun001.jpg" alt="ピックアップ3 五等分の花嫁"></li>
+          <li><img src="Photo/Grandblue/img/grandblue001.jpg" alt="ピックアップ4 ぐらんぶる"></li>
+          <li><img src="Photo/Hero/img/myhero001.jpg" alt="ピックアップ5 僕のヒーローアカデミア"></li>
+          <li><img src="Photo/Jyurietto/img/jyurietto001.jpg" alt="ピックアップ6 寄宿学校のジュリエット"></li>
+          <li><img src="Photo/Kakkou/img/kakkou001.jpg" alt="ピックアップ7 カッコウの許嫁"></li>
+          <li><img src="Photo/Kimetsu/img/kimetsu001.jpg" alt="ピックアップ8 鬼滅の刃"></li>
+          <li><img src="Photo/Kuroneko/img/kuroneko001.jpg" alt="ピックアップ9 黒猫と魔女の教室"></li>
+          <li><img src="Photo/Magi/img/magi001.jpg" alt="ピックアップ10 マギ"></li>
+          <li><img src="Photo/Mokushiroku/img/mokushiroku001.jpg" alt="ピックアップ11 黙示録の四騎士"></li>
+          <li><img src="Photo/Noragami/img/noragami001.jpg" alt="ピックアップ12 ノラガミ"></li>
+          <li><img src="Photo/Onepunch/img/onepunch001.jpg" alt="ピックアップ13 ワンパンマン"></li>
+          <li><img src="Photo/Sentai/img/sentai001.jpg" alt="ピックアップ14 戦隊大失格"></li>
+          <li><img src="Photo/Shirokuro/img/shirokuro001.jpg" alt="ピックアップ15 白聖女と黒牧師"></li>
+          <li><img src="Photo/Taizai/img/taizai001.jpg" alt="ピックアップ16 七つの大罪"></li>
+          <li><img src="Photo/Tensura/img/tensura001.jpg" alt="ピックアップ17 転生したらスライムだった件"></li>
+          <li><img src="Photo/Nogenora/img/nogenora001.jpg" alt="ピックアップ18 ノーゲーム・ノーライフ"></li>
+        </ul>
+      </section>
+
+      <section id="feature">
+        <h2 class="sec-title">BOOKS</h2>
+        <div class="grid">
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Ansatsu/index.html">
+            <img class="fadein" src="Photo/Ansatsu/img/ansatsu0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">暗殺教室</p>
+              <p class="item-text">サスペンスの要素がある学園漫画兼コメディ漫画</p>
+              <p class="item-date">初版2012年11月2日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Enen/index.html">
+            <img class="fadein" src="Photo/Enen/img/enen0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">炎炎ノ消防隊</p>
+              <p class="item-text">サスペンスやバトルアクションの要素を取り入れたサイエンス・ファンタジー作品</p>
+              <p class="item-date">初版2016年2月17日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Gotobun/index.html">
+            <img class="fadein" src="Photo/Gotobun/img/gotobun0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">五等分の花嫁</p>
+              <p class="item-text">1人の男子高校生が五つ子の女子高生の家庭教師を務めるというラブコメディ</p>
+              <p class="item-date">初版2017年10月17日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Grandblue/index.html">
+            <img class="fadein" src="Photo/Grandblue/img/grandblue0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">ぐらんぶる</p>
+              <p class="item-text">スキューバダイビングを題材としているが、作中においてはダイビング描写よりも飲み会を始めとするサークル内での交流の方が多い</p>
+              <p class="item-date">初版2014年11月7日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Hero/index.html">
+            <img class="fadein" src="Photo/Hero/img/myhero0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">僕のヒーローアカデミア</p>
+              <p class="item-text">「“無個性”」だった主人公が最高のヒーローを目指して成長していくヒーロー漫画作品</p>
+              <p class="item-date">初版2014年11月9日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Jyurietto/index.html">
+            <img class="fadein" src="Photo/Jyurietto/img/jyurietto0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">寄宿学校のジュリエット</p>
+              <p class="item-text">ウィリアム・シェイクスピアの戯曲『ロミオとジュリエット』を翻案した作品</p>
+              <p class="item-date">初版2015年11月9日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Kakkou/index.html">
+            <img class="fadein" src="Photo/Kakkou/img/kakkou0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">カッコウの許嫁</p>
+              <p class="item-text">「次にくるマンガ大賞2020コミックス部門」にノミネートされて14位となり、上位入賞</p>
+              <p class="item-date">初版2020年5月15日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Kimetsu/index.html">
+            <img class="fadein" src="Photo/Kimetsu/img/kimetsu0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">鬼滅の刃</p>
+              <p class="item-text">日本の大正時代を舞台に、主人公の少年が鬼と化した妹を人間に戻すために鬼たちと戦う姿を描く、和風の剣戟奇譚</p>
+              <p class="item-date">初版2016年6月8日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Kuroneko/index.html">
+            <img class="fadein" src="Photo/Kuroneko/img/kuroneko0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">黒猫と魔女の教室</p>
+              <p class="item-text">師弟関係にある魔女見習いと黒猫による「学園ファンタジー」作品</p>
+              <p class="item-date">初版2022年7月8日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Magi/index.html">
+            <img class="fadein" src="Photo/Magi/img/magi0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">マギ</p>
+              <p class="item-text">『千夜一夜物語』をモチーフにした冒険活劇で、登場人物の名前の一部も『千夜一夜物語』から採られている</p>
+              <p class="item-date">初版2009年12月18日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Mokushiroku/index.html">
+            <img class="fadein" src="Photo/Mokushiroku/img/mokushiroku0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">黙示録の四騎士</p>
+              <p class="item-text">『七つの大罪』の続編であり、聖戦終結から16年後の世界を舞台とし、少年・パーシバルを主人公とした物語が展開される</p>
+              <p class="item-date">初版2021年4月16日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Noragami/index.html">
+            <img class="fadein" src="Photo/Noragami/img/noragami0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">ノラガミ</p>
+              <p class="item-text">祀る社を持たない“野良神”である無名の武神夜トを主人公に、彼や周囲の人々(神々)を巡る戦いを描いたバトル漫画</p>
+              <p class="item-date">初版2011年7月15日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Onepunch/index.html">
+            <img class="fadein" src="Photo/Onepunch/img/onepunch0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">ワンパンマン</p>
+              <p class="item-text">あらゆる敵をパンチ1発(ワンパン)で倒してしまう、最強ヒーローサイタマが主人公のギャグ系アクション漫画</p>
+              <p class="item-date">初版2012年12月9日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Sentai/index.html">
+            <img class="fadein" src="Photo/Sentai/img/sentai0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">戦隊大失格</p>
+              <p class="item-text">作者の「持ち前の絵のうまさと女の子のかわいさ」だけではなく、「エンタメの中で“正義とは何か”というテーマ」に挑戦し、描かれている</p>
+              <p class="item-date">初版2021年4月16日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Shirokuro/index.html">
+            <img class="fadein" src="Photo/Shirokuro/img/shirokuro0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">白聖女と黒牧師</p>
+              <p class="item-text">架空のファンタジー世界を舞台に、聖女・セシリアと牧師・ローレンスの無自覚いちゃラブコメディの模様を描く</p>
+              <p class="item-date">初版2017年12月15日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Taizai/index.html">
+            <img class="fadein" src="Photo/Taizai/img/taizai0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">七つの大罪</p>
+              <p class="item-text">国王暗殺を企てたとされる最悪の騎士団『七つの大罪』が聖騎士により滅ぼされたと伝えられてから10年後のブリタニア王国の話</p>
+              <p class="item-date">初版2013年2月15日</p>
+            </a>
+            </div>
+          </div>
+          
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Tensura/index.html">
+            <img class="fadein" src="Photo/Tensura/img/tensura0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">転生したらスライムだった件(漫画版)</p>
+              <p class="item-text">一匹のスライムである主人公リムルは、ドラゴンにゴブリン、ドワーフやオーガなど多種多様な種族と出会い、この世界のあり方を知っていく。</p>
+              <p class="item-date">初版2015年10月30日</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="file:///C:/Users/USER/Desktop/Web%20book/Photo/Nogenora/index.html">
+            <img class="fadein" src="Photo/Nogenora/img/nogenora0.jpg" alt="">
+            <div class="item-content">
+              <p class="item-cat">ノーゲーム・ノーライフ</p>
+              <p class="item-text">ニートでヒキコモリ、だがネット上では都市伝説とまで囁かれる天才ゲーマー兄妹・空と白。 ある日“神”を名乗る少年に異世界へ召喚される。</p>
+              <p class="item-date">初版2012年4月25日</p>
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="sec-title">CONTACT</h2>
+        <div class="content">
+          <div class="contact-info">
+            <p>何書けばいいの？？</p>
+            <p>
+              ねぇねぇフッターって何書けばいいの？
+              本当に何書けばいいかわからないんだけどw
+              あーあ、あとここだけなんだけどなぁ…。
+            </p>
+            <p>
+              ガチじゃないから余計書くこと分からないよねw
+              てかw俺の本棚ってなんですかってなwww
+              自分の持ってる本紹介するのはいいけど書くことないよねフッター。
+              フッター以外にバランスよく分散させすぎたのかな？だってフッターに書くことないもん！
+              あーあ、もう終わり！俺の本棚っていう謎のWebサイトはこれにてしまいだよ！！終了！</br></br>
+              
+              あー書くことねぇ！まじで書くことねぇ！早くドラクエしてぇ！
+            </p>
+          </div>
+
+          <div class="contact-form">
+            <form action="#">
+              <dl>
+                <dt><label for="name">Name:</label></dt>
+                <dd><input type="text" id="name" name="your-name"></dd>
+                <dt><label for="email">Mail:</label></dt>
+                <dd><input type="email" id="email" name="your-email"></dd>
+                <dt><label for="message">Message:</label></dt>
+                <dd><textarea id="message" name="your-message"></textarea></dd>
+              </dl>
+              <div class="button"><input type="submit" value="SEND"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>&copy;2024 My Bookshelf </p>
+    </footer>
+
+  </body>
+</html>

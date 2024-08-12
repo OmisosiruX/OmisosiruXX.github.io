@@ -1,0 +1,524 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/*
+.book-cover {
+  flex: 1;
+  max-width: 300px;
+  margin-right: 20px;
+}*/
+
+.book-cover img {
+  max-width: 100%;
+  height: auto;
+}
+
+.book-info {
+  flex: 1;
+}
+
+.book-box1 {
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #ff6eaaad;
+  border: 3px solid #000000;
+  font-size: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.book-box2 {
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #ff6eaaad;
+  border: 3px solid #000000;
+  font-size: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.book-box3 {
+  display: block; 
+  margin-left: 88.7%;
+  /* margin-right:2.5%; */
+  text-align: right;
+  border-radius: 20px;
+  background-color: #ff6eaaad;
+  border: 3px solid #000000;
+  font-size: 100%;
+  color: black; 
+  /* justify-content: flex-end; */
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .book-cover {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .book-box1{
+    width: 93%;
+    text-align: center
+  }
+  
+  .book-box2{
+    width: 93%;
+  }
+
+  .book-box3 {
+    margin-left: 56%;
+    margin-right: 0.1%;
+  }
+
+}
+
+body {
+  font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('img/kakkou_haikei.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background 0.5s ease;
+}
+
+.slider img{
+  width: 100px;
+}
+@media (max-width: 480px){
+  .slider img{
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.btn-right,
+a.btn-right,
+button.btn-right {
+  font-size: 1.6rem; /*関係なし*/
+  font-weight: 700; /*関係なし*/
+  line-height: 1.0; /*関係なし*/
+  position: relative;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-right {
+  border: 2px solid #000;
+  border-radius: 10px;
+  background: #fff;
+
+  width: 21.7%;
+  height: 10px;
+  font-size: 100%;
+
+  -webkit-transform-style: preserve-3d;
+
+  transform-style: preserve-3d;
+}
+
+a.btn-border-right:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 15px;
+  height: 100%;
+
+  content: '';
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: translateX(0) translateY(0);
+  transform: translateX(0) translateY(0);
+
+  border-radius: 50 50% 50% 50;
+  background: #000;
+}
+
+a.btn-border-right:hover:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  line-height: 30px;
+
+  width: 30px;
+  height: 30px;
+
+  content: '\f061';
+  -webkit-transform: translateX(1070%) /*矢印の飛距離*/ translateY(.8rem);
+  transform: translateX(1070%) /*矢印の飛距離*/ translateY(.8rem);
+
+  color: #fff;
+  border-radius: 50%;
+}
+
+
+.btn-left,
+a.btn-left,
+button.btn-left {
+  font-size: 1.6rem; 
+  font-weight: 700; 
+  line-height: 1.0; 
+  position: relative;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-left {
+  border: 2px solid #000;
+  border-radius: 10px;
+  background: #fff;
+
+  width: 21.7%;
+  height: 10px;
+  font-size: 100%;
+
+  -webkit-transform-style: preserve-3d;
+
+  transform-style: preserve-3d;
+}
+
+a.btn-border-left:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 15px;
+  height: 100%;
+
+  content: '';
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: translateX(0) translateY(0);
+  transform: translateX(0) translateY(0);
+
+  border-radius: 50 50% 50% 50;
+  background: #000;
+}
+
+a.btn-border-left:hover:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  line-height: 30px;
+
+  width: 30px;
+  height: 30px;
+
+  content: '\f060';
+  -webkit-transform: translateX(-1070%)  translateY(.8rem);
+  transform: translateX(-1070%)  translateY(.8rem);
+
+  color: #fff;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  a.btn-border-right {
+      font-size: 70%;
+  }
+
+  a.btn-border-left {
+      font-size: 70%;
+  }
+}
+
+
+
+
+.btn-real-dent {
+  border: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;	
+	cursor: pointer;
+  vertical-align: middle;
+}
+
+/* .btn-real-dent img{
+  display:flex;
+  align-items: center;
+} */
+
+@media screen and (min-width: 768px){
+  .br-sp {display: none; }
+  }
+
+
+
+
+
+
+.book-cover {
+	position: relative;
+	width: 300px;
+	max-width: 100%;
+	height: 400px;
+}
+
+.image {
+	position: absolute;
+  bottom: 10px; left: 30px;
+	width: 80%;
+	opacity: 0;
+	animation: change-img-anim 55s infinite;
+}
+
+.image:nth-of-type(1) {
+  /*animation: change-img-anim-first 42s infinite;*/
+	animation-delay: 0s;
+}
+.image:nth-of-type(2) {
+	animation-delay: 2s;
+}
+.image:nth-of-type(3) {
+	animation-delay: 4s;
+}
+.image:nth-of-type(4) {
+	animation-delay: 6s;
+}
+.image:nth-of-type(5) {
+	animation-delay: 8s;
+}
+.image:nth-of-type(6) {
+	animation-delay: 10s;
+}
+.image:nth-of-type(7) {
+	animation-delay: 12s;
+}
+.image:nth-of-type(8) {
+	animation-delay: 14s;
+}
+.image:nth-of-type(9) {
+	animation-delay: 16s;
+}
+.image:nth-of-type(10) {
+	animation-delay: 18s;
+}
+.image:nth-of-type(11) {
+	animation-delay: 20s;
+}
+.image:nth-of-type(12) {
+	animation-delay: 22s;
+}
+.image:nth-of-type(13) {
+	animation-delay: 24s;
+}
+.image:nth-of-type(14) {
+	animation-delay: 26s;
+}
+.image:nth-of-type(15) {
+	animation-delay: 28s;
+}
+.image:nth-of-type(16) {
+	animation-delay: 30s;
+}
+.image:nth-of-type(17) {
+	animation-delay: 32s;
+}
+.image:nth-of-type(18) {
+	animation-delay: 34s;
+}
+.image:nth-of-type(19) {
+	animation-delay: 36s;
+}
+.image:nth-of-type(20) {
+	animation-delay: 38s;
+}
+.image:nth-of-type(21) {
+	animation-delay: 40s;
+}
+.image:nth-of-type(22) {
+	animation-delay: 42s;
+}
+
+/*@keyframes change-img-anim-first {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}*/
+
+/*@keyframes change-img-anim {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}*/    /*畦地スタイル*/
+
+@keyframes change-img-anim {
+  0% {
+    opacity: 0;
+  }
+  2.6% {
+    opacity: 1;
+  }
+  20.83% {
+    opacity: 1;
+  }
+  26.04% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+/*
+.btn-left,
+a.btn-left,
+button.btn-left {
+  font-size: 1.6rem; 
+  font-weight: 700; 
+  line-height: 1.0; 
+  position: relative;
+  display: inline-block;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-left {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+
+  -webkit-transform-style: preserve-3d;
+
+  transform-style: preserve-3d;
+}
+
+a.btn-border-left:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 15px;
+  height: 100%;
+
+  content: '';
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: translateX(0) translateY(0);
+  transform: translateX(0) translateY(0);
+
+  border-radius: 50 50% 50% 50;
+  background: #000;
+}
+
+a.btn-border-left:hover:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  line-height: 30px;
+
+  width: 30px;
+  height: 30px;
+
+  content: '\f060';
+  -webkit-transform: translateX(-600%) translateY(-.5rem);
+  transform: translateX(-600%) translateY(-.5rem);
+
+  color: #fff;
+  border-radius: 50%;
+} 
+*/
+
+
+/*使えない*/
+/*.slider {
+  .img{
+    width: 50%;
+  max-height: 100px;
+  object-fit: cover;
+  }
+}*/
+
